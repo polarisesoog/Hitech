@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:5500/order.php">
+        <p>
+            <h1>색상</h1>
+            붉은색 : <input type="radio" name="color" value="red">
+            검은색 : <input type="radio" name="color" value="balck">
+            파란색 : <input type="radio" name="color" value="blue">
+            <!-- 라디오버튼 기본 다중선택. 네임값 같으면 1개만 선택 -->
+        </p>
+        <p>
+            <h1>사이즈(기본다중선택)</h1>
+            95: <input type="checkbox" name="size">
+            100: <input type="checkbox" name="size">
+            105: <input type="checkbox" name="size">
+        </p>
+        <!-- 체크박스는 기본 다중선택 -->
+        <input type="submit" value="전송">
+        <!-- 서브밋은 기본값 제출. 벨류값 지정해서 바꿀 수 있음 -->
+    </form>
+</body>
+</html>
