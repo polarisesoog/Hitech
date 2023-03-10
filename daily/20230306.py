@@ -4,7 +4,7 @@ final = 88
 total = final+middle
 avg = total / 2                     #변수 설정이라는 뜻 =한개
 print(name, total, avg)
-
+ 
 print()
 password = "abcd"
 if(password  =="abcd"):             #같냐? 할때는 ==두개
