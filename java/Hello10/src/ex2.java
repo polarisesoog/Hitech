@@ -1,9 +1,8 @@
 
 public class ex2 {
 
-	public static void mai1n(String[] args) {
+	public static void main(String[] args) {
 		int money = 10000;
-		
 		String s;
 		s = "내돈:";
 		System.out.print(s); 
@@ -15,6 +14,7 @@ public class ex2 {
 		int v1, v2, v3 ;
 		int v10 = 10, v20 = 200, v30 = 300;
 		float f = 0/1234f;
+		System.out.println(v20);
 		
 	}
 
