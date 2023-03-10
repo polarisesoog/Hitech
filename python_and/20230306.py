@@ -14,7 +14,7 @@ else:
     print("안녕")
 
 print()
-ch1="a" ; num1=ord(ch1)         #아스키 코드 a=97/b=98     ord("a")=97
+ch1="a" ; num1=ord(ch1)      #아스키 코드 a=97/b=98  , ord("a")=97
 print(ch1, num1)
 num2 = num1 +5 ; ch2= chr(num2)
 print(num2, ch2)
@@ -31,7 +31,8 @@ print(not num1>num2)              #not으로 부정 불린값 정의 가능
 
 print()
 a_list = [1,2,4,5,6]
-a_list.insert(3,9) #변수 자체를 기능으로 연결 사용할 때   .점 사용 .insert 리스트 추가
+a_list.insert(3,9) #변수 자체를 기능으로 연결 사용할 때
+                        #(.)점 사용 .insert 리스트 추가
 print(a_list)
 solar = [ "a", "b", "c", "d"]
 del solar[3]                      #앞에 del 변수[]
