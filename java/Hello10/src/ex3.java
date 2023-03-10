@@ -9,7 +9,7 @@ public class ex3 {
 		c = '\'';  // 작은따옴표나 큰따옴표를 문자열로 쓰고싶다면 \" , \'(escape문자)
 		System.out.println("c:\\windows\\system32");
 		
-		//상수의 이름은 전부 대문자
+		
 		
 	
 
