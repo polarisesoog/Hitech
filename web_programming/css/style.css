@@ -1,0 +1,9 @@
+p{
+    color: violet; 
+    font-family: 'Dongle', sans-serif;
+    font-weight:lighter;    
+    font-size: 50px; 
+    line-height: 1.5;                 
+}
+
+/* 폰트 건드릴 때는 여기서 건드리기 */

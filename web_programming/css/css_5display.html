@@ -1,0 +1,35 @@
+<!-- HTML 요소 타입
+block 타입 - 뒤에 쓸 수 없는 = p태그, h태그
+inline 타입 - 뒤에 쓸 수 있는 태그 = ... -->
+
+<!-- display - 블록 타입-인라인타입 속성 변경 가능 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display border</title>
+    <style>
+        div{
+            border: 3px solid red ;  /* border는 경계선 표시, 한줄로 다 표시 가능 */ 
+            display:inline    /* inline형으로 변경 */ 
+            /* display:inline-block : inline형이지만 block요소 사용 가능 */ 
+        }
+        
+        span{
+            border-width:5px;   /* 굵기, 한 번에 다줄로 표시가능, 별로 사용 x */  
+            border-style:dashed;  /* dashed는 경계 형테 점선 */  
+            border-color: blue;
+            display:block      /* block형으로 변경 */ 
+        }
+    </style>
+</head>
+<body>
+    <div> 블록형 공간을 분할 하기 위한 묶음 태그(뒤에 줄 바뀜) </div>
+    <span> 인라인 형 공간을 분할 하기 위한 묶음 태그</span>  
+    
+</body>
+</html>
+
