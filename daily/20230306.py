@@ -54,8 +54,7 @@ a_dict.update(b_dict)           # .update를 써서 병합
 print(a_dict)
 
 print(4^5)
-print(2^7)
-                                    #a-=b  ==  a=a-b
+print(2^7)                                
 print(pow(7,3))                     #7의 3제곱
 
 
