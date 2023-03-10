@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css basic</title>
+    <style>
+        a{
+            color: red;
+        }
+        h1{
+            color: beige;
+            font-size: 50px;
+            text-align: center; 
+            
+        }
+        .saw{
+            color: cyan;
+        }
+        /*   .클래스 명으로 태그 지정 */
+        .gon{
+            font-size: 30px;
+        }
+        #daum{
+            color: cadetblue;
+        }
+        /*    css에서 #아이디 명으로 태그 지정*/
+    </style>
+</head>
+<body>
+    <h1>검색사이트 순위</h1>
+    <ol>                                          
+        <li><a href="http://www.google.com" class="saw">구글</a></li>
+        <li><a href="http://www.naver.com"  class="saw gon">네이버</a></li>
+        <!-- class를 띄워서 쓰면 각각의 이름으로 소속. 여러개의 class 부여 가능 -->
+        <li><a href="http://www.daum.net" id="daum">다음</a></li>
+        <!-- id 속성의 하나만 가능. 중요 우선순위 설정으로 활용가능-->
+    </ol>
+
+</body>
+</html>
