@@ -78,7 +78,4 @@ ex) 00010001(상위 니블 1로?) or 11110000 = > 11110001(나머지 유지)
 ex) 11001111 ^ 11111111 = > 00110000(반전)
 
 
-https://old-releases.ubuntu.com/releases/18.04.2/
-server
-https://cdimage.ubuntu.com/kubuntu/releases/18.04/release/
-client
+

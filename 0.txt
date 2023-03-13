@@ -6,3 +6,11 @@ https://cholol.tistory.com/547
 
 https://blog.naver.com/spes7est
 지도교수님 블로그
+
+https://old-releases.ubuntu.com/releases/18.04.2/
+server
+https://cdimage.ubuntu.com/kubuntu/releases/18.04/release/
+client
+
+https://www.daleseo.com/
+파이썬 공부 자료
