@@ -198,3 +198,36 @@ price = 1000      #전역변수 - 함수실행 시점 이전에 전역변수로 
 localTrade2()     #따라서 지역변수 없어도 실행 가능  
                  #함수 이후 price선언하면 실행 x
 print(price)
+
+
+#실습과제1
+name=eng=math=None
+def readData():
+    global name, eng, math
+    name=input("이름: ") ; eng = int(input("영어 성적: ")) ; 
+    math = int(input("수학 성적: "))
+    
+def getAvg(eng, math, n):
+    return((eng+math)/ n )
+
+def getGrade(score):
+    if score>=90 : return("A")
+    elif score>=80 : return("B")
+    elif score>=70 : return("C")
+    elif score>=60 : return("D")
+    else: return("F")
+def printTitle():
+    print("-"*53)
+    print(" 이 름 \t\t영어\t수학    총점    평균    학점")
+    print("-"*53)
+    
+def printRecord(name, subj1, subj2, mean, level) :
+    print("%s       %3d     %3d     %3d     %.2f       %2c"  %(name, subj1, subj2, subj1+subj2, mean, level))
+    print("-"*53)
+    
+readData()
+avg = getAvg(eng, math, 2)
+grade = getGrade(avg)
+printTitle()
+printRecord(name, eng, math, avg, grade)
+    
