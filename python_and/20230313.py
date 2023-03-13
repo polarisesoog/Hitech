@@ -70,7 +70,7 @@ while i < 100:     #+1 자가증식 계산식이 있어서 < 100으로 사용
         sum = sum +i
 print("합: %d" %(sum))
 
-
+#while 반복문 및 pass break 
 while True:
     print("==메뉴 화면===")
     print("   메뉴1 (1)")
@@ -122,6 +122,79 @@ if 59>=my_score:
     grade ="F 자퇴하세요." 
 print("귀하의 점수는: ", my_score, "학점은: ", grade, "" )
 
-   
 
+#함수
+def add(n):
+    sum = 0
+    for i in range(1,n):
+        sum +=i
+        print(sum)
+add(4)
+
+
+#함수 디폴트 값
+def writeInfo(name, dept, major2="없음"):
+    print("%s 님 환영합니다!" % name)
+    print("학과 : %s " % dept)
+    print("부전공 : %s" % major2)
     
+name = input("이름은? : ")
+dept = input("학과는? : ")
+answer = input("복수전공 이수 여부(Y/N) :")
+if answer == "Y" or answer == "y" :
+    major2 = input("복수전공명: ")
+if answer == "Y" or answer == "y" :
+    print("--------------------------------")
+    writeInfo(name, dept, major2)
+else:
+    print("--------------------------------")
+    writeInfo(name, dept)    
+
+
+# 함수: 언제든지 불러와서 출력; 포켓몬을 꺼내는 프로그램.
+color = input("포켓몬 색깔(빨/ 파/ 노):  ")  
+size = input("크기(대/ 중/ 소):  ")  
+def poketmon(color,size):
+    if color == "빨":
+        monc = "파이리"
+    if color == "파":
+        monc = "꼬부기"
+    if color == "노":
+        monc = "피카츄"
+    if size == "대":
+        mons = "큰 녀석"
+    if size == "중":
+        mons = "중간 녀석"
+    if size == "소":
+        mons = "쪼매난 녀석"   
+    print("나와라", monc, mons, "!!!", )
+poketmon(color, size)
+
+
+#함수 설계
+def writeFactorial(n):
+    fact = 1
+    for i in range(1,n+1):
+        fact = fact * i
+    print("%d! = %d" %(n,fact))
+n = int(input("정수: "))
+writeFactorial(n)
+
+def computeFactorial(n) :
+    fact = 1
+    for i in range(1, 1+n):
+        fact = fact *i 
+    return fact
+n = int(input("정수:  "))
+print("%d! = %d" %(n, computeFactorial(n)))
+
+
+#전역변수
+def localTrade2():
+    price = 1200    #지역변수로서 함수내에 존재시 우선
+    salePrice = price * 1.2
+    print(price, salePrice)    
+price = 1000      #전역변수 - 함수실행 시점 이전에 전역변수로 선언 
+localTrade2()     #따라서 지역변수 없어도 실행 가능  
+                 #함수 이후 price선언하면 실행 x
+print(price)
