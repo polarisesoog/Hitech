@@ -97,8 +97,7 @@ for i in range(0,0):
          
 for i in range(1, 10, 3):
     print("A")         # 1부터 10미만, 3칸씩
-
-
+    
 
 #점수 입력시 학점 출력        
 my_score = int(input("점수를 입력하세요: "))
