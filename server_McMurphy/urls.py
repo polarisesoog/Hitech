@@ -13,9 +13,14 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path
+#서버 주소 결정 파일
 
+from django.contrib import admin #관리자 페이지 쓸지?
+from django.urls import path
+from McMurphy.views import Main
+
+#앱 내용을 html파일로 불러 오기 위한 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+        path('', Main.as_view()), 
+        path('admin/', admin.site.urls) #관리자 페이지 쓸지?
 ]

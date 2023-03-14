@@ -24,12 +24,16 @@ SECRET_KEY = 'django-insecure--u42tr$sh8pk0ef(8-ntvb%xlc#y@o-)0!k8l^*)g605$bjj-_
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#기본적으로 개발 모드는 DEBUG = True 로 설정되어 있습니다. 
+# 운영 모드일 경우 False로 설정해야 합니다.
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
-
+#App을 생성했으면 장고가 경로를 찾을 수 있게 
+# INSTALLED_APPS에 추가한 App 경로를 등록해줍니다.
+#해당 추가한 파일로 들어가서 app.py에 보면 class 이름이 000이라고 명시
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -37,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'McMurphy.apps.McmurphyConfig'
 ]
 
 MIDDLEWARE = [
@@ -51,10 +56,22 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'server_McMurphy.urls'
 
+import os 
+# 장고에서 template은 MVC 패턴의 View와 비슷한 기능을 합니다. 
+# MVC 패턴 구조
+# Model : 안전하게 데이터 저장
+# View : 데이터 적절하게 유저에게 보여줌
+# Control, Template : 사용자의 입력과 이벤트에 반응하여 model과 view 업데이트
+
+# template은 데이터를 사용자에게 보여주는 컴포넌트 입니다. 
+# 이러한 template의 경로나 정보를 설정하는 곳이 TEMPLATES입니다.
+# 프로젝트 내에서 templates라는 폴더를 생성하고 
+# 'DIRS'에 기본 BASE_DIR를  templates경로로 설정합니다. 
+# templates 내에 사용할 html 파일을 만듭니다.
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -114,9 +131,12 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-
+#장고에서 image, JavaScript, CSS 등 과 같은 파일을 static file이라고 합니다.
+# 장고는 이러한 정적(static) 파일을 관리하고, URL 설정을 합니다. 
+# STATIC_URL은 프로젝트의 static 파일 경로로 지정하고, 
+# 장고가 정적파일을 찾을 수 있는 기본설정을 STATICFILES_DIRS로 정의합니다. 
 STATIC_URL = 'static/'
-
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 

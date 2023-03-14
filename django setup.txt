@@ -5,6 +5,7 @@ python manage.py migrate(데이터베이스구축)
 python manage.py createsuperuser(관리자 계정만들기)
 python manage.py migrate(저장)
 python manage.py runserver(서버 실행)
+python manage.py runserver (127.0.0.1:8005)(포트 바꾸는 방법)
 
 
 2. 서버 setting파일
