@@ -1,0 +1,13 @@
+ip주소(논리)/ Mac주소(물리)
+internet protocol/media acess control
+
+ip주소
+32bits / 8.8.8.8(0~255)
+8bits = 1byte
+Kb = 2^10byte
+Mb = 2^20byte
+Gb = 2^30byte
+Tb = 2^40byte
+
+
+
