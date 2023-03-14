@@ -3,7 +3,8 @@
     python -m venv (kkkkk 가상환경이름)
     폴더 선택 '아니오'
         그리고 가상환경 실행 //  .\(kkkkkk)\Scripts\activate 
-        .\git_project1\Scripts\activate
+        .\project_venv\Scripts\activate
+        c:/Users/winst/Documents/GitHub/practice_venv/Scripts/Activate.ps1
         if 에러 발생시 윈도우즈 파워 쉘-관리자 권한 실행 // Set-ExecutionPolicy RemoteSigned // '네'
         가상환경 속  // pip list 로 상태 확인
             마지막 오른쪽 밑 인터프리터에서 가상환경 설정 필요
