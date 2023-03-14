@@ -1,10 +1,17 @@
+<<<<<<< HEAD
 https://whitepro.tistory.com/615
 파이썬 장고 핀터레스트
 
 https://cholol.tistory.com/547
 파이썬 장고 인스타그램
 
+=======
+>>>>>>> 6f31684c79d7b87615afb9de2f04869995aa4f4b
 https://old-releases.ubuntu.com/releases/18.04.2/
 server
 https://cdimage.ubuntu.com/kubuntu/releases/18.04/release/
 client
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6f31684c79d7b87615afb9de2f04869995aa4f4b

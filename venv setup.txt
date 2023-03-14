@@ -1,0 +1,28 @@
+1. 가상환경 만드는 방법 (가상환경에서만)
+터미널에서
+    python -m venv (kkkkk 가상환경이름)
+    폴더 선택 '아니오'
+        그리고 가상환경 실행 //  .\(kkkkkk)\Scripts\activate 
+        .\git_project1\Scripts\activate
+        if 에러 발생시 윈도우즈 파워 쉘-관리자 권한 실행 // Set-ExecutionPolicy RemoteSigned // '네'
+        가상환경 속  // pip list 로 상태 확인
+            마지막 오른쪽 밑 인터프리터에서 가상환경 설정 필요
+            가상환경 속 모듈버전 저장은 pip freeze > asdf.txt       
+가상환경 종료시 터미널에서 
+    deactivate                
+     
+     
+2. 가상환경에서 공용공간 모듈 활용(공용 모듈버전 포함)         
+터미널에서
+    python -m venv mvenv --system-site-packages            
+    -이하-가상환경 활성화까지 동일
+터미널에서 pip list 하면 공용공간에 목록
+    pip list --local 하면 가상환경 목록 
+
+
+3. 가상환경 복제 방법
+pip freeze > requirements.txt 
+로 파일을 만들고, 그것만 git에 add 해서 올리고,
+복제할 때에는, 
+pip install -r requirements.txt
+로, 동일한 venv 를 생성합니다.
