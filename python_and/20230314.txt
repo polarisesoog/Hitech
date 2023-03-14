@@ -2,12 +2,17 @@ ip주소(논리)/ Mac주소(물리)
 internet protocol/media acess control
 
 ip주소
-32bits / 8.8.8.8(0~255)
+32bits / 8.8.8.8(0~255) / 앞 8*2는 네트워크/뒤 8*2는 HOST 
 8bits = 1byte
 Kb = 2^10byte
 Mb = 2^20byte
 Gb = 2^30byte
 Tb = 2^40byte
 
+subnet mask(네트워크가 방대할 때 서브 주소 표현 방법)
+
+gateway(정보 출력 로드)
+
+DNS(도메인 네임 서버)
 
 
